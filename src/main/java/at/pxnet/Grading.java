@@ -8,7 +8,7 @@ public final class Grading {
     public static boolean isFailing(Person person) {
         int[] grades = person.getGrades();
 
-        if (grades.length < 3) {
+        if (grades.length < 2) {
             throw new IllegalStateException("Cannot check if grades is smaller than 3");
         }
 
