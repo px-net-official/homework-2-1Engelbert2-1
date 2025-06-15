@@ -20,10 +20,7 @@ public final class Grading {
             if (grade == 4) {
                 countFours++;
             }
-            if (countFours >= 3) {
-                throw new IllegalStateException("Failed Test!");
-            }
         }
-        return false;
+        return countFours >= 3;
     }
 }
